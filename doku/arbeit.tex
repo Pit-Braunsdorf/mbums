@@ -1,5 +1,5 @@
 \documentclass[12pt,a4paper]{scrreprt}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -9,8 +9,9 @@
 \usepackage{csquotes}
 \usepackage[ngerman]{babel}
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage{todonotes}
-\presetkeys{todonotes}{inline,backgroundcolor=yellow}{}
+\usepackage{geometry}
+\geometry{a4paper, right=60mm}
+\usepackage[textwidth=55mm]{todonotes}
 \author{Pit Braunsdorf}
 \title{Nanog Variability and Pluripotency Regulation of Embryonic Stem Cells - Insights from a Mathematical Model Analysis}
 
@@ -18,6 +19,7 @@
 	\maketitle
 	\tableofcontents
 	
+	\listoftodos
 	\include{abkuerzungen}
 	\include{einleitung}
 	\include{grundlagen}

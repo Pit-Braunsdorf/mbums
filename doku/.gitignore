@@ -4,3 +4,7 @@
 *.pdf
 *.out
 *.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.tdo
