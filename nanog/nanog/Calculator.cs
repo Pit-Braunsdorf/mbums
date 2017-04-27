@@ -51,18 +51,18 @@ namespace nanog
 
         private static double Calculate(double time, double u, double s1, double s2, double s3, double s4, double k1, double k2, double k3, double k4, double f, double d_o, double d_s, double d_os, double d_n, double gamma_os, double gamma_n, double sigma)
         {
-            var cOS = CalculateOS(u, s1, gamma_os, k1, d_o, s2, k2, d_s, d_os);
+            var cOS = CalculateOS(time, u, s1, gamma_os, k1, d_o, s2, k2, d_s, d_os);
 
-            return CalculateNanog(s4, gamma_n, k4, s3, k3, d_n, sigma, cOS);
+            return CalculateNanog(time, s4, gamma_n, k4, s3, k3, d_n, sigma, cOS);
         }
 
-        private static double CalculateNanog(double s4, double gamma_n, double k4, double s3, double k3, double d_n, double sigma, double cOS)
+        private static double CalculateNanog(double time, double s4, double gamma_n, double k4, double s3, double k3, double d_n, double sigma, double cOS)
         {
             //TODO Implement
             return 1;
         }
         
-        private static double CalculateOS(double u, double s1, double gammaOs, double k1, double dO, double s2, double k2, double dS, double dOs)
+        private static double CalculateOS(double time, double u, double s1, double gammaOs, double k1, double dO, double s2, double k2, double dS, double dOs)
         {
             //TODO Implement
             return 0;
